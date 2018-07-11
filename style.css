@@ -1,0 +1,84 @@
+/*
+Theme Name: Decent Productivity Framework
+Theme URI:
+Author: Sebastian Kurzynowski
+Author URI: https://decentproductivity.com
+Description: Bootstrap based framework.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: decent-productivity
+Tags: blog, two-columns, custom-menu, sticky-post, translation-ready, right-sidebar, custom-background, editor-style, threaded-comments, rtl-language-support
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto sans-serif;
+}
+pre{
+    background-color: #e0e0eb;
+    font-family: monospace;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+#brain_img {
+    height: 300px;
+}
+
+body {
+    background-color: white;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    color: #F7D488;
+}
+
+.jumbotron {
+    background-color: white;
+    font-family: Roboto;
+}
+
+a.btn.btn-primary.btn-lg {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+a.btn.btn-primary.btn-lg:hover {
+    background-color: grey;
+
+}
+
+a.nav-link {
+    color: black;
+}
+
+.betwee_cards_row {
+    height: 3%;
+}
+
+#header_logo {
+    height: 50px;
+    width: 50px;
+}
+
+#header_page_name {
+    font-size: 30px;
+    padding-top: 0;
+    font-family: Roboto;
+}
+.content ul{
+   margin-left: 2em;
+}
+
+/*
+font-family: 'Gaegu', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+ */
