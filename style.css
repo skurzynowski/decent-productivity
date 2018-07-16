@@ -27,6 +27,7 @@ pre{
     padding-left: 1em;
 }
 
+
 #brain_img {
     height: 300px;
 }
@@ -73,8 +74,14 @@ a.nav-link {
     padding-top: 0;
     font-family: Roboto;
 }
+
+.content ol,
 .content ul{
    margin-left: 2em;
+}
+
+h1{
+    font-size: 3.5rem;
 }
 
 /*

@@ -1,42 +1,46 @@
 <?php
-
-get_header();
-tha_content_before();
-if ( have_posts() ) : while ( have_posts() ):
-	the_post();
-	?>
-    <div class="content">
-        <div class="row">
-            <div class="col-6 offset-3" align="center"><h1><?php the_title() ?></h1></div>
-        </div>
-        <div class="row">
-            <div class="col-6 offset-3" align="right"><h5>Autor: <?php the_author() ?> Utworzono: <?php the_date() ?></h5></div>
-        </div>
-        <div class="row mt-2">
-            <div class="col-6 offset-3">
-				<?php the_content(); ?>
+	get_header();
+	tha_content_before();
+	if ( have_posts() ) : while ( have_posts() ):
+		the_post();
+		?>
+        <div class="content">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12" align="center"><h1><?php the_title() ?></h1></div>
+                <div class="col-12 col-md-12 col-lg-12" align="center">
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 col-md-12 col-xl-3 col-lg-3">
+                    <div class="row">
+                        <div class="col box_post_info">
+                            <h5><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;<?php the_date() ?></h5>
+                            <h5><i class="far fa-user"></i>&nbsp;&nbsp;<?php the_author() ?></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6  col-xl-6">
+					<?php the_content(); ?>
+                </div>
             </div>
         </div>
-    </div>
-<?php
-endwhile;
-	?>
+	<?php
+	endwhile;
+		?>
+        <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 offset-lg-3 offset-md-3">
+			<?php
+			?>
+        </div>
+        </div><?php
+	endif;
+?>
     <div class="row">
-    <div class="col-6 offset-3">
+    <div class="col-12 col-md-12 offset-lg-3 offset-xl-3 col-lg-6  col-xl-6">
 		<?php
-		// Previous/next post navigation.
-//		the_post_navigation( array(
-//			'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-//			               '<span class="screen-reader-text">' . __( 'post:', 'twentyfifteen' ) . '</span> ' .
-//			               '<span class="post-title">%title</span>',
-//			'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-//			               '<span class="screen-reader-text">' . __( 'post:', 'twentyfifteen' ) . '</span> ' .
-//			               '<span class="post-title">%title</span>',
-//		) );
+			comments_template();
 		?>
     </div>
     </div><?php
-endif;
-tha_content_after();
-
-get_footer();
+	get_footer();
