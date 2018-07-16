@@ -3,6 +3,7 @@
 if ( ! function_exists( 'ap_core_setup' ) ) {
 	function ap_core_setup() {
 		require_once( get_template_directory() . '/inc/hooks.php' );
+		add_theme_support( 'post-thumbnails' );
 	}
 }
 

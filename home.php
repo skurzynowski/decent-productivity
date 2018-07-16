@@ -9,6 +9,7 @@ tha_content_before();
     </div>
 <?php
 $counter = 0;
+		
 if ( have_posts() ) : while ( have_posts() ):
 	the_post();
 	$counter ++;
