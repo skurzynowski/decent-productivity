@@ -15,21 +15,26 @@
 </head>
 <body <?php body_class() ?>>
 <?php tha_body_top(); ?>
-<div class="container" id="wrap">
-    <div class="row">
-        <div class="col">
-            <header>
-                <ul class="nav mt-3">
-                    <li class="nav-item">
-                        <img id="header_logo" class="rounded float-left" src="<?php echo get_template_directory_uri() .'/inc/brain.png' ?>">
-                    </li>
-                    <li class="nav-item">
-                        <div id="header_page_name" class="nav-link active" >Decent Productivity</div>
-                    </li>
-                </ul>
-		        <?php tha_header_before(); ?>
-		        <?php tha_header_after(); ?>
-            </header>
+<?php if ( wp_is_mobile() ): ?>
+<div class="container-fluid" id="wrap">
+	<?php else: ?>
+    <div class="container" id="wrap">
+		<?php endif; ?>
+        <div class="row">
+            <div class="col">
+                <header>
+                    <ul class="header-logo nav mt-3">
+                        <li class="nav-item">
+                            <a href="<?php echo home_url() ?>"><img id="header_logo" class="rounded float-left"
+                                                                    src="<?php echo get_template_directory_uri() . '/inc/brain.png' ?>"></a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="header_page_name" class="nav-link active">Decent Productivity</div>
+                        </li>
+                    </ul>
+					<?php tha_header_before(); ?>
+					<?php tha_header_after(); ?>
+                </header>
+            </div>
         </div>
-    </div>
-    <hr>
+        <hr>
