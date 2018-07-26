@@ -19,9 +19,12 @@ This theme, like WordPress, is licensed under the GPL.
 }
 
 body {
-    font-size: 16px;
     font-family: Roboto sans-serif;
     background-color: white;
+}
+
+html {
+    font-size: 2.1vh;
 }
 
 pre {
@@ -80,82 +83,6 @@ a.nav-link {
 .content ul {
     margin-left: 2em;
 }
-
-h1 {
-    font-size: 3.5em;
-}
-
-@media (min-width: 576px) {
-    body {
-        font-size: 3em;
-    }
-
-    div#header_page_name.nav-link.active {
-        font-size: 1em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h4 {
-        font-size: 2.1em;
-    }
-
-    pre {
-        font-family: monospace;
-        font-size: 0.7em;
-        padding-top: 0.8em;
-        padding-bottom: 0.8em;
-        padding-left: 0.8em;
-    }
-}
-
-/*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-    body {
-        font-size: 3em;
-    }
-
-    div#header_page_name.nav-link.active {
-        font-size: 1em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h4 {
-        font-size: 2.1em;
-    }
-
-    h5 {
-        font-size: 0.9em;
-    }
-
-    pre {
-        font-family: monospace;
-        font-size: 0.7em;
-        padding-top: 0.8em;
-        padding-bottom: 0.8em;
-        padding-left: 0.8em;
-    }
-}
-
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-    body {
-        font-size: 1em;
-    }
-}
-
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-    body {
-        font-size: 1em;
-    }
-}
-
 /*
 font-family: 'Gaegu', cursive;
 font-family: 'Source Sans Pro', sans-serif;

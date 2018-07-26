@@ -19,7 +19,7 @@ get_header('main');
                 <div class="text-center mb-4">
                     <img id="brain_img"  src="<?php echo get_template_directory_uri() .'/inc/brain.png' ?>" class="img-fluid" alt="Responsive image">
                 </div>
-                <h1 class="display-4">Witaj na blogu Decent Productivity!</h1>
+                <h1 class="display-4"> Witaj na blogu Decent Productivity!</h1>
                 <p class="lead">Przetestowane metody i narzędzia podnoszące produktywność w nauce i programowaniu.</p>
                 <hr class="my-4">
                 <p>Większa produktywność to więcej czasu na to co naprawdę kochasz!</p>
