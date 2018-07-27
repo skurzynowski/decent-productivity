@@ -16,7 +16,7 @@
 <body <?php body_class() ?>>
 <?php tha_body_top(); ?>
 <?php if ( wp_is_mobile() ): ?>
-<div class="container-fluid" id="wrap">
+<div class="container-fluid mobile" id="wrap">
 	<?php else: ?>
     <div class="container" id="wrap">
 		<?php endif; ?>
