@@ -4,7 +4,7 @@
 	if ( have_posts() ) : while ( have_posts() ):
 		the_post();
 		?>
-        <div class="content">
+        <div class="content dont-break-out">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12" align="center"><h1><?php the_title() ?></h1></div>
                 <div class="col-12 col-md-12 col-lg-12" align="center">
