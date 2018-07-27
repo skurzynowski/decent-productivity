@@ -15,7 +15,11 @@
 </head>
 <body <?php body_class() ?>>
 <?php tha_body_top(); ?>
-<div class="container" id="wrap">
+<?php if ( wp_is_mobile() ): ?>
+<div class="container-fluid mobile" id="wrap">
+	<?php else: ?>
+    <div class="container" id="wrap">
+		<?php endif; ?>
     <div class="row">
         <div class="col">
             <header>
@@ -24,8 +28,8 @@
                         <a class="nav-link active" href="#">Decent Productivity</a>
                     </li>
                 </ul>
-		        <?php tha_header_before(); ?>
-		        <?php tha_header_after(); ?>
+				<?php tha_header_before(); ?>
+				<?php tha_header_after(); ?>
             </header>
         </div>
     </div>
