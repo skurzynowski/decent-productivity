@@ -2,7 +2,7 @@
 <? wp_footer(); ?>
 <div class="row mt-3">
     <div class="col">
-        <ul class="nav justify-content-between">
+        <ul id="footer_nav" class="nav justify-content-between">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Sebastian Kurzynowski</a>
             </li>
