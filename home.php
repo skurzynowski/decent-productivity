@@ -5,7 +5,7 @@ tha_content_before();
 ?>
     <div class="content">
     <div class="row mb-5">
-        <div class="col"><h1 align="center">Ostatnio dodane artykuły</h1></div>
+        <div class="col"><h1 align="center"><?php echo wp_title(false) ?> </h1><hr></div>
     </div>
 <?php
 $counter = 0;
@@ -40,11 +40,11 @@ if ( have_posts() ) : while ( have_posts() ):
 endwhile;
 	if ( wp_is_mobile() ) {
 		echo '</div>';
-    }else{
+	} else {
 		if ( 0 !== $counter % 3 ) {
 			echo '</div>';
 		}
-    }
+	}
 endif;
 ?>
     </div>
