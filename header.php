@@ -31,6 +31,12 @@
                         <li class="nav-item">
                             <div id="header_page_name" class="nav-link active">Decent Productivity</div>
                         </li>
+						<?php echo str_replace( 'lang-item ', 'lang-item nav-item language-flag ', pll_the_languages( array(
+							'show_flags'   => 1,
+							'show_names'   => 0,
+							'hide_current' => 1,
+							'echo'         => 0
+						) ) ); ?>
                     </ul>
 					<?php tha_header_before(); ?>
 					<?php tha_header_after(); ?>

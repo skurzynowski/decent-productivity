@@ -52,6 +52,13 @@ div#header_page_name.nav-link.active {
 .jumbotron {
     background-color: white;
 }
+.language-flag{
+    padding-top: 0.25rem;
+}
+
+.language-flag-main img{
+    padding-top: 2.5rem;
+}
 
 a.btn.btn-primary.btn-lg {
     background-color: white;

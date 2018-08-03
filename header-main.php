@@ -25,11 +25,17 @@
             <header>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Decent Productivity</a>
+                        <a class="nav-link active" href="#">Decent Productivity</a>
                     </li>
+	                <?php echo str_replace( 'lang-item ', 'lang-item nav-item language-flag-main ', pll_the_languages( array( 'show_flags'   => 1,
+	                                                                                                                         'show_names'   => 0,
+	                                                                                                                         'hide_current' => 1,
+	                                                                                                                         'echo'         => 0
+	                ) ) ); ?>
                 </ul>
 				<?php tha_header_before(); ?>
 				<?php tha_header_after(); ?>
             </header>
         </div>
     </div>
+        <hr>
